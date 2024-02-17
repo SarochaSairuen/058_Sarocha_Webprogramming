@@ -1,0 +1,33 @@
+.nav-link {
+    color: white;
+}
+.active{
+    background-color: red !important;
+}
+.ex {
+    margin-top: 20px;
+
+    .row{
+        min-height: 250px;
+    }
+}
+@media (max-width:576px) {
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+
+        .col{
+            text-align: center;
+            margin-bottom: 20px;
+
+            .btn {
+                margin: auto;
+            }
+        }
+    }
+}
+.bi {
+    font-size: 25px;
+    margin: 0 20px;
+    color: white;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <style>
+        .news1{
+            width: 300px;
+            border: 3px solid rgb(81, 7, 199);
+            margin-bottom: 10px;
+            padding: 15px;
+            position: relative;
+        }
+        .news2{
+            position: relative;
+            right: 25px;
+            left: 200px;
+            bottom: -20px;
+            width: 300px;
+            border: 3px solid rgb(196, 77, 121);
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+        .readmore {
+            position: absolute;
+            right: 2px;
+            bottom: 3px;
+            width: 100px;
+            background-color: darksalmon;
+            padding: 10px;
+            color: black;
+            border: 2px solid brown;
+        }
+
+        .footer {
+            width: 500px;
+            margin: 0 auto;          
+        }
+
+        .promotion {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 200px;
+            font-size: 49px;
+            color: red;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="promotion">Promotion!</div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Nobis atque perferendis blanditiis doloremque illo minus consectetur 
+        veniam ipsum ipsa voluptatum minima ipsam perspiciatis quam dolorem, 
+        exercitationem beatae accusantium repellendus quaerat?
+    </p>
+    <div class="news1">
+        <h1>News 1</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Cumque tenetur ipsa maxime voluptas quasi aut error quod corrupti
+          recusandae in? Qui totam ratione laborum nulla sit ipsum ex dignissimos a. 
+        
+        <div class="readmore">
+        Read more
+        </div>
+
+    </div>
+
+    <div class="news2">
+        <h1>News 2</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Cumque tenetur ipsa maxime voluptas quasi aut error quod corrupti
+         recusandae in? Qui totam ratione laborum nulla sit ipsum ex
+          dignissimos a.
+    </div>
+
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Sint incidunt temporibus molestiae dolor perspiciatis in architecto
+        quasi ex iusto reprehenderit maxime quo, delectus ipsam placeat id 
+        sapiente ipsum consequatur exercitationem.
+    </div>
+
+    
+</body>
+</html>

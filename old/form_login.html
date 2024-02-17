@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handler</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("form").onsubmit = function () {
+          let username = document.querySelector("#username").value;
+          let password = document.querySelector("#password").value;
+       
+          //   กรณี username < 8 ไม่ให้ submit และ show error message
+          let checkusername = false;
+          if(xxxxxxxxxxx){
+         
+
+          }else{
+
+          }
+          //   กรณี password < 8 ไม่ให้ submit และ show error message
+
+          let checkpassword= false;
+          if(){
+           
+
+          }else{
+
+          }
+
+          if(checkusername && checkpassword){
+            return true; // สั่งให้ Form Submit
+          }else{
+            return false; // สั่งให้ Form ไม่ Submit
+          }
+        //   alert(name);
+        };
+
+        document.querySelector("#clickme").onclick = function () {
+          document.querySelector("h1").innerHTML = "Good Bye";
+        };
+      });
+
+      //   function goodbye() {
+      //     document.querySelector("h1").innerHTML = "Good Bye";
+      //   }
+    </script>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <button id="clickme">Click Me</button>
+
+    <form action="">
+      <p>Username :</p>
+      <input type="text" id="username" />
+      <p id="errorUsername" class="error"></p>
+      <p>Password :</p>
+      <input type="password" id="password" />
+      <p id="errorUsername" class="error"></p>
+      <input type="submit" value="OK" />
+    </form>
+  </body>
+</html>

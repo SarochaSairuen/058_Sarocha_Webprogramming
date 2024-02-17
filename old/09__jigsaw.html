@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Responsive Design</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"/>
+
+<style>
+      .bluebackground {
+        background-color: white;
+      }
+ 
+      /* Responsive */
+      @media (max-width: 768px) {
+        .headingNew {
+          /* display: none; */
+          font-size: 64px;
+          /* color: red; */
+        }
+      }
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+           
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #ddd;
+            color: rgb(255, 0, 0);
+        }
+
+        .cnn-badge-icon {
+            width: 50px;
+            height: 30px;
+            
+        }
+
+        .form-inline {
+            margin: 0;
+            
+        }
+
+        .form-control {
+            background-color: black;
+            margin-right: 5px;
+        }
+        
+        .log-in{
+            background-color: #000000;
+        }
+        .nav-justify-content-center {
+
+        }
+</style>
+</head>
+<body>
+  <nav>
+    <div>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+   
+    <div data-uri="cms.cnn.com/_components/brand-logo/instances/new-edition-header-v1@published" class="brand-logo" data-editable="settings">
+        <a class="brand-logo__logo-link" href="https://edition.cnn.com" title="CNN logo" data-zjs="click" data-zjs-component_id="https://edition.cnn.com" data-zjs-component_text="Main Logo" data-zjs-component_type="icon" data-zjs-container_id="" data-zjs-container_type="navigation" data-zjs-destination_url="https://edition.cnn.com" data-zjs-page_type="section" data-zjs-page_variant="landing_homepage">
+          <span class="brand-logo__logo">
+              <svg class="cnn-badge-icon" width="60px" height="60px" viewBox="0 0 240 240" fill="" xmlns="https://www.w3.org/2000/svg" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect><path d="M.31-.07v240h240V-.07ZM86.54,135.29V92.51c0-16.1,20.81-23.83,31.82-5.12.8,1.35,18.14,31.22,18.14,31.22V92.51c0-16.1,20.8-23.83,31.81-5.12.8,1.35,18.14,31.22,18.14,31.22V76.79h10.38V147a2.11,2.11,0,0,1-1.51,2.14c-1.1.3-2.26-.38-3.11-1.82-.17-.28-9-15.46-17.48-30.13L159.17,90.4c-2.18-3.7-5.43-4.35-7.74-3.72a6.23,6.23,0,0,0-4.55,6.13V147a2.12,2.12,0,0,1-1.51,2.14c-1.11.3-2.27-.38-3.11-1.82-.15-.25-8.34-14.36-16.25-28-10.08-17.38-16.7-28.78-16.8-28.95-2.18-3.71-5.44-4.35-7.77-3.72a6.24,6.24,0,0,0-4.56,6.13v53.05a2.9,2.9,0,0,1-2.72,2.71H67.23a28.64,28.64,0,0,1,0-57.28h14v10.36H67.35a18.28,18.28,0,1,0,0,36.56H83.68A2.84,2.84,0,0,0,86.54,135.29Zm124.77,12.05c0,16.1-20.81,23.83-31.82,5.13-.79-1.35-18.14-31.23-18.14-31.23v26.1c0,16.1-20.8,23.83-31.81,5.13-.8-1.35-18.14-31.23-18.14-31.23v24.61c0,11.17-6.63,17.22-17,17.22H67.25a43.14,43.14,0,0,1,0-86.28h14V87.15h-14a32.78,32.78,0,1,0,0,65.56H94.16a7,7,0,0,0,6.86-6.85V92.81a2.1,2.1,0,0,1,1.51-2.13c1.1-.3,2.26.38,3.11,1.82l16.79,28.93c9.76,16.83,16.17,27.88,16.25,28,2.19,3.7,5.45,4.35,7.78,3.71A6.22,6.22,0,0,0,151,147V92.82a2.11,2.11,0,0,1,1.49-2.14c1.09-.3,2.24.38,3.08,1.82l15.56,26.81,17.49,30.15c1.71,2.9,4.09,3.93,6.16,3.93a6,6,0,0,0,1.61-.22A6.23,6.23,0,0,0,201,147V76.79h10.34Z" transform="translate(-0.31 0.07)"></path></svg>
+          </span>
+          </a>
+  </div>
+  <ul>
+        <li><a href="#World">World</a></li>
+        <li><a href="#Politics">US Politics</a></li>
+        <li><a href="#Business">Business</a></li>
+        <li><a href="#Health">Health</a></li>
+        <li><a href="#More">More</a></li>
+    </ul>
+
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+        
+    </form>
+
+    <div class="log-in">
+        <button class="user-account-nav__text-button user-account-nav__text-button--unauth userAccountButton" aria-haspopup="true" aria-expanded="false" role="link" aria-label="User Account Log In Button" data-login-href="/account/log-in" data-zjs="click" data-zjs-component_id="/account/log-in" data-zjs-component_text="User Account Log In Button" data-zjs-component_type="button" data-zjs-container_id="" data-zjs-container_type="navigation" data-zjs-destination_url="/account/log-in" data-zjs-page_type="section" data-zjs-page_variant="landing_homepage" data-zjs-navigation-type="main" data-zjs-navigation-location="header">
+            Log In
+        </button>
+    </div>
+    
+    <div>
+      <ul class="nav justify-content-center">
+      <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><span class="sp">COVID-19:</span>Vaccination tracker</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#"><span class="sp">TRENDING:</span>Most luxurious airport</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Mysterious Chinese app</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Gerd Müller</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Melania Trump's White House Rose Garden</a>
+      </li>
+  </ul>
+</div>
+    
+</nav>
+<div class="container overflow-hidden">
+<div class="row g-3">
+<div class="col-sm-12 col-lg-6">
+<div class="p-2 bluebackground">
+<h2 class="text-center">Mar-a-Lago and its owner</h2>
+<h2 class="text-center">have long caused concerns for US </h2>
+<h2 class="text-center">intelligence</h2>
+
+<img src="images1/home.jpeg" alt="home" width="550px">
+<p>
+    <h5>From revealing an airstrike over 'beautiful'cake to cellphone photos of the 'nuclear football,'Trump's Florida home</h5>
+    <ul>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>Afghan defense minister curses fleeing President</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>US completes evacuation of embassy as flag comes down</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>Full story: Taliban forces enter capital of Kabul</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>Biden officials admit miscalculation as Afghan government falls</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>
+        <i
+          class="bi bi-play-circle"
+          style="font-size: 1.2rem; color: red"></i>
+        Was it a mistake for the U.S. to leave Afghanistan?</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>Interpreter: 'If the Taliban find me, they will kill me and my family'</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>
+        <i
+          class="bi bi-play-circle"
+          style="font-size: 1.2rem; color: red"></i>
+          CNN reporter enters former US base captured by the Taliban</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+    </ul>
+</p>
+</div>
+</div>
+ 
+        <div class="col-sm-6 col-lg-3">
+<div class="p-2 bluebackground">
+<h2></h2>
+<img src="images1/ทหาร.jpeg" alt="ทหาร" width="250px">
+<p>
+    <h5>Coronavirus has created the perfect conditions for a full-scale war on truth</h5>
+    <ul>
+      <li>US health care system 'breaking,' expert says</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+    </ul>
+</p>
+<img src="images1/แม่น้ำ.jpg" alt="แม่น้ำ" width="250px">
+<p>
+    <h5>The militant fighters are assuming control of the Afghan capital and have seized the presidential palace</h5>
+</p>
+</div>
+</div>
+ 
+        <div class="col-sm-6 col-lg-3">
+<div class="p-2 bluebackground">
+<h2></h2>
+<img src="images1/ทะเลสาป.jpg" alt="ทะเลสาป" width="250px">
+<p>
+    <h5>Millions globally flock to mysterious Chinese app</h5>
+    <ul>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>At least 20 people killed after fuel tank explodes in Lebanon</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>BBC Russia correspondent calls her imminent expulsion 'shocking'</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>At least four people presumed dead after mudslides hit Japan</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>Analysis: Taliban forces enter capital of Kabul</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>Biden officials admit miscalculation as Afghan government falls</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>Interpreter: 'If the Taliban find me, they will kill me and my family'</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+      <li>
+        <i
+          class="bi bi-play-circle"
+          style="font-size: 1.2rem; color: red"></i>
+          CNN reporter enters former US base captured by the Taliban</li>
+      <ul class="nav justify-content-center border-bottom pb-1 mb-1"></ul>
+    </ul>
+</p>
+</div>
+</div>
+</div>
+</div>
+ 
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+></script>
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+></script>
+
+<!--MainMenu 6540011026 ธีรภัทร ดำสุวรรณ
+    SecondMenu 6540011052 อรุษา รักขาว 
+    MainContent 6540011058 สโรชา สายรื่น 
+    #tab เมนูรองวางอีกคอลัมม์ไม่ได้
+--> 
+
+
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function convert_CelsiustoFahrenhtie(c){
+            let f = (c)* (9/5) + 32;
+            return f;
+        }
+        function convert_FahrenheittoCelsius(f){
+            let celsius = ((f-32)*5) / 9;
+            return celsius;
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        let name = 'Sarocha';
+        //c = confirm('Are you sure?')
+        // if(c){
+        //    document.write('Hello '+ name);
+        //}else{
+        //    document.write('GoodBye '+ name);
+        //}
+
+        //Array
+        let dept;
+        let scores = [10,20,34,56,11];
+        let sum = 0;
+        for(var i=0; i<5; i++){
+            document.writeln(scores[i]+'<br>');
+            sum+=scores[i];
+        }
+        document.write('Sum = '+ sum +'<br>');
+        document.write('Avg = '+ sum / scores.length);
+
+        let j=0;
+        while(j<5){
+            document.write(scores[j] + '<br>');
+            sum += scores[j];
+            j++;
+        }
+        
+        let c = 50;
+
+        let f = convert_CelsiustoFahrenhtie(c);
+        document.write('Fahrenheit ( ํF)'+ f + '<br>');
+
+        let celsius = convert_FahrenheittoCelsius(f);
+        document.write('celsius ( ํC)'+ celsius);
+        //document.write(dept);
+    </script>
+</body>
+</html>

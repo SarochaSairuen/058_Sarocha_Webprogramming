@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active learning Form</title>
+</head>
+<body>
+    <h3>สมาชิก</h3>
+    <ul>
+        <li>นางสาวอรุษา รักขาว 6540011052</li>
+        <li>นางสาวสโรชา สายรื่น 6540011058</li>
+    </ul>
+    <h3>ฟอร์มลงทะเบียนศิษย์เก่า</h3>
+    <form action="">
+        <label for="name">ชื่อ-นามสกุล : </label>
+        <input type="name" name="name"/>
+        
+        
+        <label for="no">รหัสนักศึกษา : </label>
+        <input type="no" name="no"/>
+
+        <br/>
+        <br/>
+        <label for="gender">เพศ</label>
+        <input type="radio" name="gender" />ชาย
+        <input type="radio" name="gender" />หญิง
+        <input type="radio" name="gender" />เพศทางเลือก
+
+        <br/>
+        <br/>
+        <label for="years">ปีการศึกษาที่เข้าศึกษา : </label>
+        <input type="years" name="years"/>
+
+        <br/>
+        <br/>
+        <label for="address">ที่อยู่ : </label>
+        <textarea name="address" cols="30" rows="10"></textarea>
+
+        <br/>
+        <br/>
+        <label for="email">อีเมลล์ : </label>
+        <input type="email" name="email" />
+
+        <br/>
+        <br/>
+        <label for="contact">เบอร์โทรศัพท์ : </label>
+        <input type="contact" name="contact" />
+
+        <br/>
+        <br/>
+        <label for="department">หลักสูตร : </label>
+        <select name="dept">
+            <option value="1">IT</option>
+            <option value="2">IS</option>
+        </select>
+
+        <br/>
+        <br>
+        <label for="occupation">อาชีพปัจจุบัน : </label>
+        <input type="occupation" name="occupation"/>
+
+        <br/>
+        <br/>
+        <label for="Place of work">สถานที่ทำงาน : </label>
+        <textarea name="Place of work" cols="30" rows="10" placeholder="ระบุชื่อบริษัทและที่อยู่"></textarea>
+
+        <br/>
+        <br/>
+        <label for="Type of work">ประเภทงาน : </label>
+        <select name="dept">
+            <option value="1">SA</option>
+            <option value="2">Web Developer</option>
+            <option value="3">Graphic Design</option>
+            <option value="4">Digital marketing</option>
+        </select>
+
+        
+        <br/>
+        <br/>
+        <label for="profilepic">อัปโหลดรูป : </label>
+        <input type="file" name="profilepic" />
+        
+        <br/>
+        <br/>
+        <input type="Submit" value="Submit"/>
+    </form>
+</body>
+</html>
